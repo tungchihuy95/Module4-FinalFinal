@@ -14,23 +14,23 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotEmpty (message = "Xin mời nhập tên thành phố!")
+    @NotEmpty (message = "Must enter something!")
     private String name;
 
     @ManyToOne
-    @NotNull (message = "Xin mời nhập tên quốc gia!")
+    @NotNull (message = "Must enter something!")
     private Country country;
 
-    @NotNull (message = "Xin mời nhập diện tích!")
+    @NotNull (message = "Must enter something!")
     private Integer totalArea;
 
-    @NotNull (message = "Xin mời nhập dân số!")
+    @NotNull (message = "Must enter something!")
     private Integer population;
 
-    @NotNull (message = "Xin mời nhập GDP!")
+    @NotNull (message = "Must enter something!")
     private Integer gdp;
 
-    @NotEmpty (message = "Xin mời nhập mô tả!")
+    @NotEmpty (message = "Must enter something!")
     private String description;
 
     public City() {
